@@ -1,17 +1,13 @@
 h_D370CA26 = function(param0, param1, param2)
-	if param1.Name == "we_ms_fail" then
-		Game.KillTimer("we_ms_fail")
-		HUD.ShowMessage("WANTEDEVENT_MILESTONE_FAILED")
-		Game.SpawnCop(true, false)
-        Music.ForcePursuitMusic()
-	end
+    local G1 = Game
 	if param1.Name == "we_music" then
-		Game.KillTimer("we_music")
+		G1.KillTimer("we_music")
         Music.ForcePursuitMusic()
 	end
 	if param1.Name == "pur_consec" then
-		Game.KillTimer("pur_consec")
-		Game.SpawnCop(true, false)
+		G1.KillTimer("pur_consec")
+        G1.SpawnCop(true, false)
         Music.ForcePursuitMusic()
+        HUD.ShowMessage("WANTEDEVENT_PUR_CONSEC_PROGRESS")
 	end
 end
