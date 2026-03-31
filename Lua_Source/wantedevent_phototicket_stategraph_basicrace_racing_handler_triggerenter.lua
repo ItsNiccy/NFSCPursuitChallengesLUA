@@ -10,8 +10,7 @@ h_AA3E9D36 = function(param0, param1, param2)
         param2.PlayerHasWon = true
         Game.NotifyRaceFinished()
         ChangeState("raceover")
-    end
-    if Game.GetSimableSpeedKmh(param1.Element) < param0.ThreshholdSpeed then
+    elseif Game.GetSimableSpeedKmh(param1.Element) < param0.ThreshholdSpeed then
         HUD.ShowMessage("WANTEDEVENT_PHOTOTICKET_TOOSLOW")
         Game.SetTimer("spdtrp_tooslow", 2.5)
 	end
