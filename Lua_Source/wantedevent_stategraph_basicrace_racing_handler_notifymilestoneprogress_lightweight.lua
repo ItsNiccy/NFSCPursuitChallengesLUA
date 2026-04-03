@@ -5,9 +5,6 @@ h_F83F94A3 = function(param0, param1, param2)
 	if param1.MilestoneName ~= param0.MilestoneName then
 		return
 	end
-    if param0.MilestoneName == "" then
-        return
-    end
     local msdisp, DBSSM, P0MN
     msdisp = param1.ValueReached
     DBSSM = Debug.ShowScreenMessage
@@ -40,11 +37,9 @@ h_F83F94A3 = function(param0, param1, param2)
 	if not param0.MilestoneBiggerIsBetter and param0.ThreshholdValue > param1.ValueReached then
 		param2.PassedMilestone = true
         HUD.ShowMessage("WANTEDEVENT_MILESTONE_PASSED")
-		return
-	end
+    end
 	if param0.MilestoneBiggerIsBetter and param1.ValueReached >= param0.ThreshholdValue then
 		param2.PassedMilestone = true
         HUD.ShowMessage("WANTEDEVENT_MILESTONE_PASSED")
-		return
 	end
 end
