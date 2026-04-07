@@ -9,16 +9,14 @@ h_503D679C = function(param0, param1, param2)
 		param2.PlayerHasWon = true
         RaceStatus:SetHasBeenWon(true)
 		ChangeState("raceover")
-	end
-	if not param2.PassedMilestone and param0.MilestoneName ~= "pursuits_in_a_row" then
+	elseif not param2.PassedMilestone and param0.MilestoneName ~= "pursuits_in_a_row" then
         param2.PlayerHasWon = false
         RaceStatus:SetHasBeenWon(false)
         G1.SetRaceExpired(param1.Perpetrator)
         ChangeState("raceover")
-	end
-	if not param2.PassedMilestone and param0.MilestoneName == "pursuits_in_a_row" then
+	elseif not param2.PassedMilestone and param0.MilestoneName == "pursuits_in_a_row" then
         G1.ForcePursuitStart()
-        G1.SetTimer("pur_consec", 0.11)
+        G1.SetTimer("pur_consec", 0.1)
         G1.SetTimer("we_music", 13.125)
 	end
 end

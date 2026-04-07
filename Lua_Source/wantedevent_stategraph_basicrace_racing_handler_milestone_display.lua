@@ -25,7 +25,7 @@ h_6C6C78CF = function(param0, param1, param2)
 	elseif P0MN == "insurance_claims" then
 		DBSSM("Hit "..param0.ThreshholdValue.." Traffic Cars!")
 	elseif P0MN == "cops_in_pursuit" then
-		DBSSM("Get "..param0.ThreshholdValue.." Cops Chasing You!")
+		DBSSM("Get "..param0.ThreshholdValue.." Cops Involved!")
 	elseif P0MN == "total_cops_in_pursuit" then
 		DBSSM("Get "..param0.ThreshholdValue.." Cops Involved!")
 	elseif P0MN == "pursuits_in_a_row" then
