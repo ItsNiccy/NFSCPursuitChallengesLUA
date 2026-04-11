@@ -27,7 +27,7 @@ h_6C6C78CF = function(param0, param1, param2)
 	elseif P0MN == "cops_in_pursuit" then
 		DBSSM("Get "..param0.ThreshholdValue.." Cops Involved!")
 	elseif P0MN == "total_cops_in_pursuit" then
-		DBSSM("Get "..param0.ThreshholdValue.." Cops Involved!")
+		DBSSM("Get "..param0.ThreshholdValue.." \n Total Cops Involved!")
 	elseif P0MN == "pursuits_in_a_row" then
 		DBSSM("Escape "..param0.ThreshholdValue.." times in a row!")
 	end

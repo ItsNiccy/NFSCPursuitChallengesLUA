@@ -13,25 +13,25 @@ h_F83F94A3 = function(param0, param1, param2)
         if P0MN == "insurance_claims" then
             DBSSM("OMISSIONE DI SOCCORSO:\n"..param1.ValueReached.."/"..param0.ThreshholdValue)
         elseif P0MN == "tire_spikes_dodged" then
-            DBSSM("STRISCE CHIODATE EVITATE:\n"..param1.ValueReached.."/"..param0.ThreshholdValue)
+            DBSSM("STRISCE CHIODATE\nEVITATE:\n"..param1.ValueReached.."/"..param0.ThreshholdValue)
         elseif P0MN == "cops_damaged" then
-            DBSSM("UNITÀ DANNEGGIATE:\n"..param1.ValueReached.."/"..param0.ThreshholdValue)
+            DBSSM("PATTUGLIE DANNEGGIATE:\n"..param1.ValueReached.."/"..param0.ThreshholdValue)
         elseif P0MN == "total_infractions" then
             DBSSM("INFRAZIONI REGISTRATE:\n"..param1.ValueReached.."/"..param0.ThreshholdValue)
         elseif P0MN == "rhinos_destroyed" then
             DBSSM("RHINO IMMOBILIZZATI:\n"..param1.ValueReached.."/"..param0.ThreshholdValue)
         elseif P0MN == "roadblocks_dodged" then
-            DBSSM("BLOCCHI STRADALI EVITATI:\n"..param1.ValueReached.."/"..param0.ThreshholdValue)
+            DBSSM("BLOCCHI STRADALI\nEVITATI:\n"..param1.ValueReached.."/"..param0.ThreshholdValue)
         elseif P0MN == "cops_destroyed_in_pursuit" then
-            DBSSM("UNITÀ DISTRUTTE:\n"..param1.ValueReached.."/"..param0.ThreshholdValue)
+            DBSSM("PATTUGLIE DISTRUTTE:\n"..param1.ValueReached.."/"..param0.ThreshholdValue)
         elseif P0MN == "cost_to_state_in_pursuit" then
             DBSSM("COSTO PER LO STATO:\n"..param1.ValueReached.."/"..(param0.ThreshholdValue/1000).."K")
         elseif P0MN == "bounty_in_pursuit" then
             DBSSM("TAGLIA RAGGIUNTA:\n"..param1.ValueReached.."/"..param0.ThreshholdValue)
         elseif P0MN == "cops_in_pursuit" then
-            DBSSM("UNITÀ COINVOLTE:\n"..param1.ValueReached.."/"..param0.ThreshholdValue)
+            DBSSM("PATTUGLIE COINVOLTE:\n"..param1.ValueReached.."/"..param0.ThreshholdValue)
         elseif P0MN == "total_cops_in_pursuit" then
-            DBSSM("TOTALE UNITÀ COINVOLTE:\n"..param1.ValueReached.."/"..param0.ThreshholdValue)
+            DBSSM("TOTALE PATTUGLIE\nCOINVOLTE:\n"..param1.ValueReached.."/"..param0.ThreshholdValue)
         elseif P0MN == "pursuits_in_a_row" then
             DBSSM("INSEGUIMENTI EVASI:\n"..param1.ValueReached.."/"..param0.ThreshholdValue)
         elseif P0MN == "helis_in_pursuit" then
