@@ -15,8 +15,9 @@ h_503D679C = function(param0, param1, param2)
         G1.SetRaceExpired(param1.Perpetrator)
         ChangeState("raceover")
 	elseif not param2.PassedMilestone and param0.MilestoneName == "pursuits_in_a_row" then
-        G1.ForcePursuitStart()
-        G1.SetTimer("pur_consec", 0.1)
-        G1.SetTimer("we_music", 13.125)
+        G1.ResetCopsForRestart()
+        HUD.ShowMessage("WANTEDEVENT_PUR_CONSEC_PROGRESS")
+        G1.SetTimer("pur_refresh_msg", 2)
+        G1.SetTimer("pur_refresh", 3.25)
 	end
 end

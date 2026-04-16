@@ -13,11 +13,11 @@ h_6C6C78CF = function(param0, param1, param2)
 	elseif P0MN == "roadblocks_dodged" then
 		DBSSM("EVITA "..param0.ThreshholdValue.." BLOCCHI STRADALI!")
 	elseif P0MN == "bounty_in_pursuit" then
-		DBSSM("OTTIENI "..param0.ThreshholdValue.." DI TAGLIA!")
+		DBSSM("OTTIENI "..param0.ThreshholdValue.."\nDI TAGLIA!")
 	elseif P0MN == "cops_destroyed_in_pursuit" then
 		DBSSM("IMMOBILIZZA "..param0.ThreshholdValue.." PATTUGLIE!")
 	elseif P0MN == "cost_to_state_in_pursuit" then
-		DBSSM("CAUSA "..(param0.ThreshholdValue/1000).."K\nDI COSTO PER LO STATO!")
+		DBSSM("CAUSA "..(param0.ThreshholdValue/1000)..".000\nDI COSTO PER LO STATO!")
 	elseif P0MN == "pursuit_evasion_time" then
 		DBSSM("SFUGGI IN MENO DI\n"..(param0.ThreshholdValue/60).." MINUTI!!")
 	elseif P0MN == "pursuit_length" then
