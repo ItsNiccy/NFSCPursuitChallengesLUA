@@ -11,6 +11,7 @@ h_503D679C = function(param0, param1, param2)
 		ChangeState("raceover")
 	elseif not param2.PassedMilestone and param0.MilestoneName ~= "pursuits_in_a_row" then
         param2.PlayerHasWon = false
+        HUD.ShowMessage("WANTEDEVENT_MILESTONE_FAILED")
         RaceStatus:SetHasBeenWon(false)
         G1.SetRaceExpired(param1.Perpetrator)
         ChangeState("raceover")

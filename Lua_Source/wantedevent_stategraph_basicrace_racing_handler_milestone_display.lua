@@ -1,34 +1,34 @@
 h_6C6C78CF = function(param0, param1, param2)
-    local P0MN, DBSSM
+    local P0MN, HSM
     P0MN = param0.MilestoneName
-    DBSSM = Debug.ShowScreenMessage
+    HSM = HUD.ShowMessage
 	if P0MN == "tire_spikes_dodged" then
-		DBSSM("Avoid "..param0.ThreshholdValue.." Spike Strips!")
+		HSM("AVOID "..param0.ThreshholdValue.." SPIKE STRIPS!")
 	elseif P0MN == "cops_damaged" then
-		DBSSM("Tag "..param0.ThreshholdValue.." Cop Cars!")
+		HSM("TAG "..param0.ThreshholdValue.." COP CARS!")
 	elseif P0MN == "total_infractions" then
-		DBSSM("Commit "..param0.ThreshholdValue.." Infractions!")
+		HSM("COMMIT "..param0.ThreshholdValue.." INFRACTIONS!")
 	elseif P0MN == "rhinos_destroyed" then
-		DBSSM("Destroy "..param0.ThreshholdValue.." Heavy Rhinos!")
+		HSM("DESTROY "..param0.ThreshholdValue.." HEAVY RHINOS!")
 	elseif P0MN == "roadblocks_dodged" then
-		DBSSM("Avoid "..param0.ThreshholdValue.." Roadblocks!")
+		HSM("AVOID "..param0.ThreshholdValue.." ROADBLOCKS!")
 	elseif P0MN == "bounty_in_pursuit" then
-		DBSSM("Get "..param0.ThreshholdValue.." Bounty!")
+		HSM("GET "..param0.ThreshholdValue.." BOUNTY!")
 	elseif P0MN == "cops_destroyed_in_pursuit" then
-		DBSSM("Destroy "..param0.ThreshholdValue.." Cop Cars!")
+		HSM("DESTROY "..param0.ThreshholdValue.." COP CARS!")
 	elseif P0MN == "cost_to_state_in_pursuit" then
-		DBSSM("Cause "..(param0.ThreshholdValue/1000).."K Cost To State!")
+		HSM("CAUSE "..(param0.ThreshholdValue/1000).."K COST TO STATE!")
 	elseif P0MN == "pursuit_evasion_time" then
-		DBSSM("Evade Within "..(param0.ThreshholdValue/60).." Minutes!")
+		HSM("EVADE WITHIN "..(param0.ThreshholdValue/60).." MINUTES!")
 	elseif P0MN == "pursuit_length" then
-		DBSSM("Evade After "..(param0.ThreshholdValue/60).." Minutes!")
+		HSM("EVADE AFTER "..(param0.ThreshholdValue/60).." MINUTES!")
 	elseif P0MN == "insurance_claims" then
-		DBSSM("Hit "..param0.ThreshholdValue.." Traffic Cars!")
+		HSM("HIT "..param0.ThreshholdValue.." TRAFFIC CARS!")
 	elseif P0MN == "cops_in_pursuit" then
-		DBSSM("Get "..param0.ThreshholdValue.." Cops Involved!")
+		HSM("GET "..param0.ThreshholdValue.." COPS INVOLVED!")
 	elseif P0MN == "total_cops_in_pursuit" then
-		DBSSM("Get "..param0.ThreshholdValue.." \n Total Cops Involved!")
+		HSM("GET "..param0.ThreshholdValue.." TOTAL COPS INVOLVED!")
 	elseif P0MN == "pursuits_in_a_row" then
-		DBSSM("Escape "..param0.ThreshholdValue.." times in a row!")
+		HSM("EVADE "..param0.ThreshholdValue.." PURSUITS IN A ROW!")
 	end
 end
